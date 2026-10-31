@@ -27,7 +27,7 @@ export default function HeroScene() {
     scene.add(group)
 
     // (1) Outer shell: Icosahedron wireframe in signal orange
-    const outerGeo = new THREE.IcosahedronGeometry(1.9, 1)
+    const outerGeo = new THREE.IcosahedronGeometry(1.9, 2)
     const outerEdges = new THREE.EdgesGeometry(outerGeo)
     const outerMat = new THREE.LineBasicMaterial({
       color: 0xff5b1f,

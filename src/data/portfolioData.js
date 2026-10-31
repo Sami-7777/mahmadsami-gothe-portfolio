@@ -60,7 +60,7 @@ export const skillGroups = [
   { title: "Programming", items: ["Python", "SQL", "JavaScript"] },
   { title: "Frontend", items: ["HTML", "CSS", "React"] },
   { title: "Backend", items: ["Django", "FastAPI"] },
-  { title: "Tools", items: ["Git", "GitHub", "VS Code", "Antigravity"] },
+  { title: "Tools", items: ["Git", "GitHub", "VS Code"] },
 ];
 
 export const projects = [
