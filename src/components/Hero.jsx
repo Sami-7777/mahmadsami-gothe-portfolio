@@ -112,7 +112,7 @@ export default function Hero() {
         {/* RIGHT COLUMN: Interactive 3D Frame */}
         <div
           data-hero="fade"
-          className="hud-frame border border-bone/10 bg-panel/40 h-[48vh] min-h-[320px] lg:h-[70vh] relative overflow-hidden flex items-center justify-center"
+          className="hud-frame border border-bone/10 bg-panel/40 h-[48vh] min-h-[320px] lg:h-[70vh] relative flex items-center justify-center"
         >
           {/* Corner HUD labels */}
           <span className="absolute top-3 left-3 font-mono text-[10px] uppercase tracking-[0.25em] text-dim pointer-events-none select-none z-10">

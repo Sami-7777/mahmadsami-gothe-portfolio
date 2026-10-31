@@ -6,7 +6,7 @@
 export const personalInfo = {
   name: "Mahmadsami Gothe",
   brandName: "Mahmadsami Gothe",
-  role: "AI Engineer with Python Full Stack Developer",
+  role: "Python Developer | AI Engineer with Python Full Stack Intern",
   city: "Bengaluru, India",
   timezone: "Asia/Kolkata", // IANA timezone used by the live clock in the HUD
   email: "mahmadsami007@gmail.com",
@@ -34,7 +34,7 @@ export const navLinks = [
 
 export const heroContent = {
   eyebrow: "PORTFOLIO — 2026",
-  intro: "I build practical software solutions using Python, AI, and full-stack development to solve real-world problems.",
+  intro: "I'm a CSBS student currently pursuing AI Engineer with Python Full Stack training at Tap Academy. I enjoy building practical applications using Python, modern web technologies, and AI tools.",
   statusLines: [
     "Building with Python & React",
     "Practicing DSA and problem-solving",
@@ -69,7 +69,7 @@ export const projects = [
     number: "01",
     title: "Aranyani — Ecosystem Collapse Early Warning System",
     description:
-      "An early warning system that analyzes Sentinel-2 satellite data, fire hotspots, and ecological indicators using machine learning to detect and predict forest degradation.",
+      "An ecosystem monitoring system that analyzes satellite imagery and hotspot data to identify environmental changes and assess ecosystem risks. Built using Python, FastAPI, React, and machine learning techniques.",
     tags: ["Sentinel-2", "FastAPI", "XGBoost", "React"],
     year: "2026",
     liveUrl: "",
@@ -80,7 +80,7 @@ export const projects = [
     number: "02",
     title: "AI-Based Cyberattack Detection System",
     description:
-      "Detects malicious URLs, suspicious IPs, phishing, malware, and DDoS attacks using machine learning.",
+      "A cybersecurity application that uses trained machine learning models to identify potentially malicious URLs. Built using Python, FastAPI, and Streamlit.",
     tags: ["Python", "FastAPI", "Scikit-learn", "Redis"],
     year: "2026",
     liveUrl: "",
