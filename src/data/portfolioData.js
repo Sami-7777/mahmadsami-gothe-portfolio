@@ -34,7 +34,7 @@ export const navLinks = [
 
 export const heroContent = {
   eyebrow: "PORTFOLIO — 2026",
-  intro: "I'm a CSBS student currently pursuing AI Engineer with Python Full Stack training at Tap Academy. I enjoy building practical applications using Python, modern web technologies, and AI tools.",
+  intro: "Passionate about technology, problem-solving, and creating meaningful digital experiences through clean code and innovative solutions.",
   statusLines: [
     "Building with Python & React",
     "Practicing DSA and problem-solving",
@@ -48,7 +48,7 @@ export const aboutContent = {
   label: "01 / About",
   heading: "Building intelligent software that solves problems.",
   paragraph:
-    "I'm a CSE student focused on Python full-stack development and AI who enjoys building projects that solve real-world problems and improving problem-solving skills through DSA. Currently, I'm developing software and preparing for engineering opportunities through the placement training program at TAP Academy.",
+    "I'm a CSBS student focused on Python full-stack development and AI who enjoys building projects that solve real-world problems and improving problem-solving skills through DSA. Currently, I'm developing software and preparing for engineering opportunities through the placement training program at TAP Academy.",
   stats: [
     { value: 2, suffix: "", label: "Projects built" },
     { value: 200, suffix: "+", label: "Programming problems solved" },
@@ -60,7 +60,7 @@ export const skillGroups = [
   { title: "Programming", items: ["Python", "SQL", "JavaScript"] },
   { title: "Frontend", items: ["HTML", "CSS", "React"] },
   { title: "Backend", items: ["Django", "FastAPI"] },
-  { title: "Tools", items: ["Git", "GitHub", "VS Code"] },
+  { title: "Tools", items: ["Git", "GitHub", "VS Code", "Antigravity"] },
 ];
 
 export const projects = [
