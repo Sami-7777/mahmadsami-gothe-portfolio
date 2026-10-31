@@ -101,7 +101,7 @@ export default function About() {
                 <>
                   <img
                     src={portraitSrc}
-                    alt={`${personalInfo.name} — ${personalInfo.role}`}
+                    alt="Mahmadsami Gothe — AI Engineer with Python Full Stack Developer, TAP Academy student"
                     className="w-full h-full object-cover grayscale contrast-125 transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
