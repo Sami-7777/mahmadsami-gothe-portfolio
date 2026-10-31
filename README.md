@@ -3,7 +3,7 @@
 A high-performance "Signal HUD" developer portfolio featuring real-time interactive Three.js 3D graphics, smooth scroll pacing, and technical typography.
 
 ## Live site
-https://YOUR-SITE-URL/
+https://my-portpolio-ruby-sigma.vercel.app/
 
 ## Tech stack
 - **Frontend**: React 19, Vite, Tailwind CSS 4
