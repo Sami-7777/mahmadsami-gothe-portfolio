@@ -70,7 +70,7 @@ export default function Footer() {
           aria-hidden="true"
           className="w-full overflow-hidden py-4 text-center select-none"
         >
-          <span className="block text-[clamp(2rem,7vw,6.6rem)] font-bold leading-none uppercase tracking-[-0.03em] whitespace-nowrap text-bone/[0.07]">
+          <span className="block text-[13.5vw] font-bold leading-none uppercase tracking-[-0.05em] whitespace-nowrap text-bone/[0.07]">
             {personalInfo.brandName || personalInfo.name}
           </span>
         </div>
