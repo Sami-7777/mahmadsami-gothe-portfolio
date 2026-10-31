@@ -31,7 +31,6 @@ function ProjectCard({ project }) {
             src={coverUrl}
             alt={project.title}
             className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
-            loading="lazy"
           />
         ) : (
           <div className="hud-grid w-full h-full flex items-center justify-center font-mono text-xs uppercase tracking-widest text-dim">
