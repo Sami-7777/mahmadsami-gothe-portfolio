@@ -63,7 +63,7 @@ export default function Hero() {
           </div>
 
           {/* Heading with solid first word and outlined rest */}
-          <h1 className="text-[clamp(3.2rem,11vw,9.5rem)] font-bold uppercase leading-[0.88] tracking-[-0.04em] flex flex-col my-3">
+          <h1 className="text-[clamp(2.6rem,6.2vw,7.5rem)] font-bold uppercase leading-[0.9] tracking-[-0.04em] flex flex-col my-3">
             <span className="text-bone">
               <ScrambleText text={firstName} trigger="mount" delay={200} />
             </span>

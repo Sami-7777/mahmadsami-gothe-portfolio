@@ -13,9 +13,18 @@ export default function HeroScene() {
     // 1. Scene, Camera & Renderer
     const width = container.clientWidth || 300
     const height = container.clientHeight || 300
+    const initialAspect = width / height
     const scene = new THREE.Scene()
-    const camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 100)
-    camera.position.z = 7
+    const camera = new THREE.PerspectiveCamera(40, initialAspect, 0.1, 100)
+
+    // Dynamic camera distance so 3D objects never clip in narrow frames
+    const getCameraZ = (aspect) => {
+      const tanHalfFov = Math.tan((40 * Math.PI) / 360)
+      const targetExtent = 2.4
+      const distH = targetExtent / (tanHalfFov * Math.max(0.35, aspect))
+      return Math.max(6.8, distH)
+    }
+    camera.position.z = getCameraZ(initialAspect)
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2))
@@ -27,7 +36,7 @@ export default function HeroScene() {
     scene.add(group)
 
     // (1) Outer shell: Icosahedron wireframe in signal orange
-    const outerGeo = new THREE.IcosahedronGeometry(1.9, 1)
+    const outerGeo = new THREE.IcosahedronGeometry(1.45, 1)
     const outerEdges = new THREE.EdgesGeometry(outerGeo)
     const outerMat = new THREE.LineBasicMaterial({
       color: 0xff5b1f,
@@ -38,7 +47,7 @@ export default function HeroScene() {
     group.add(outerShell)
 
     // (2) Inner core: Point cloud in bone white
-    const innerGeo = new THREE.IcosahedronGeometry(1.15, 4)
+    const innerGeo = new THREE.IcosahedronGeometry(0.9, 4)
     const innerMat = new THREE.PointsMaterial({
       color: 0xe8e6df,
       size: 0.025,
@@ -49,7 +58,7 @@ export default function HeroScene() {
     group.add(innerCore)
 
     // (3) Orbit ring: Tilted ellipse loop
-    const curve = new THREE.EllipseCurve(0, 0, 2.7, 2.7, 0, 2 * Math.PI, false, 0)
+    const curve = new THREE.EllipseCurve(0, 0, 1.95, 1.95, 0, 2 * Math.PI, false, 0)
     const ringPoints = curve.getPoints(128)
     const ringGeo = new THREE.BufferGeometry().setFromPoints(ringPoints)
     const ringMat = new THREE.LineBasicMaterial({
@@ -115,7 +124,9 @@ export default function HeroScene() {
       const w = container.clientWidth
       const h = container.clientHeight
       if (w === 0 || h === 0) return
-      camera.aspect = w / h
+      const aspect = w / h
+      camera.aspect = aspect
+      camera.position.z = getCameraZ(aspect)
       camera.updateProjectionMatrix()
       renderer.setSize(w, h)
       renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2))
